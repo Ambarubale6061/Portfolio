@@ -25,7 +25,7 @@ const Hero = () => {
             words="Transforming Concepts into Seamless User Experience"
             />
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                Hi I&apos;m Tanaya , Passionate Full Stack Web Developer </p>
+               Hi, I’m Ambar Ubale — Full Stack Developer. </p>
 
             <a href="#about">
                 <MagicButton 

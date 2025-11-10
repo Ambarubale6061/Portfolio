@@ -40,7 +40,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
+      title: "I’m a tech enthusiast with a passion for building efficient and scalable web solutions.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -51,7 +51,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building an E-commerce platform with CMS",
+      title: "Currently Building a next-gen E-commerce platform redefining online shopping.",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -61,7 +61,7 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Do you want to start a project together?",
+      title: "Let’s build the next big thing together.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -73,62 +73,62 @@ export const navItems = [
   
   export const projects = [
     {
-      id: 1,
-      title: "Blogger: Enhanced blog creation and management.",
-      des: "Discover Blogger, your go-to web application for effortlessly creating and managing blog posts,Built with Next.js",
-      img: "/blog.png",
-      iconLists: ["/re.svg", "/tail.svg", "/next.svg", "/fm.svg"],
-      link: "https://bloggerv1.vercel.app/",
+  id: 1,
+  title: "QuickCart: Modern E-Commerce Web App",
+  des: "A modern e-commerce platform built with Next.js and MongoDB.",
+  img: "/quickcart.png",
+  iconLists: ["/next.svg", "/node.png", "/tail.svg", "/mongo.png"],
+  link: "https://quickcart-ten-opal.vercel.app/"
     },
     {
-      id: 2,
-      title: "Youtube2.0 : A Youtube Clone",
-      des: "Experience seamless video streaming and sharing with Youtube2.0,for a captivating user experience.",
-      img: "/ytube.png",
-      iconLists: ["/next.svg", "/tail.svg", "/stream.svg"],
-      link: "https://ytube2.vercel.app/",
+  id: 2,
+  title: "Task Manager App",
+  des: "An efficient task manager to organize and track daily activities with ease.",
+  img: "/taskapp.png",
+  iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/node.png"],
+  link: "https://task-app-nine-lovat.vercel.app/",
     },
     {
-      id: 3,
-      title: "iNotebook: Effortless notes management.",
-      des: "A cloud-based app for seamless note management, allowing you to create, organize, and access your notes anytime, anywhere.",
-      img: "/inotebook.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-      link: "https://notebook-cloud.vercel.app/",
+  id: 3,
+  title: "Real-Time Chat App",
+  des: "A real-time chat app built with React, Node.js, Socket.io, and MongoDB.",
+  img: "/chatapp.png",
+  iconLists: ["/socket.png", "/mongo.png", "/re.svg", "/node.png"],
+  link: "https://chat-application-q7ig.onrender.com/",
     },
-    {
-      id: 4,
-      title: "Driving school app for fluid learning.",
-      des: "This app also tracks and displays daily progress, offering a comprehensive view of monthly routines",
-      img: "/driving.png",
-      iconLists: ["/next.svg", "/tail.svg", "/re.svg"],
-      link: "https://github.com/Dev-Tanu/DrivingApp",
-    },
+     {
+    id: 4,
+    title: "Weather App",
+    des: "A real-time weather app showing temperature, humidity, and forecasts by city.",
+    img: "/weather.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/api.png"],
+    link: "https://weather-dashboard-six-steel.vercel.app/",
+  },
+
   ];
   
   export const testimonials = [
     {
-      quote:
-        "Working with Tanaya was a seamless and rewarding experience. Her in-depth knowledge of both front-end and back-end development, combined with a keen eye for detail, ensured our project met the highest standards.Her ability to integrate complex functionalities while maintaining a user-friendly interface was particularly impressive.",
-      name: "Revati",
-      title: "UI/UX Developer",
-      img: "/revati2.jpg",
+  quote:
+    "Ambar is a highly dedicated full-stack developer. He has an amazing ability to turn complex problems into simple, functional solutions. Working with him is always a pleasure.",
+  name: "Aniket Kolhe",
+  title: "Frontend Developer",
+  img: "/aniket.jpg",
     },
     {
       quote:
-        "Tanaya brought an exceptional level of expertise and creativity to our project. Her mastery of full stack development, along with her sharp focus on user experience, made a significant impact on the final product. Her collaborative spirit and commitment to excellence were evident throughout our collaboration",
-      name: "Adinath Shelke",
-      title: "Full Stack developer ",
-      img: "/adi3.jpg",
+        "Ambar builds sleek, responsive web apps with MERN stack expertise. Always delivers clean code and smart solutions.",
+      name: "Vidhan Barad",
+      title: "Full Stack Developer",
+      img: "/vidhan.jpg",
     },
     {
       quote:
-        "Collaborating with Tanaya was an absolute delight. Her proficiency in both front-end and back-end development, resulted in a project that exceeded our expectations.Tanaya has a remarkable talent for merging sophisticated functionalities with an intuitive user experience. Her proactive communication and dedication to the project were commendable.",
-      name: "Kalyani Joshi",
-      title: "Freelancer",
-      img: "/kalyani.jpg",
-    },
-    
+        "Ambar is reliable, skilled, and always eager to learn new technologies. He’s the kind of developer who makes teamwork smooth and results outstanding.",
+      name: "Suresh Kandelkar",
+      title: "Android Developer",
+      img: "/suresh.jpg",
+    }
   ];
   
   export const companies = [
@@ -167,29 +167,29 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "React developer Intern",
-      desc: "Built seamless and functional web-based platform using React.js, enhancing interactivity.",
+      title: "UI/UX Design",
+      desc: "I create clean, modern, and intuitive designs focused on delivering seamless user experiences across all platforms.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Web Developer Intern",
-      desc: "Designed and Developed company's website as web developer intern at inspirizon",
+      title: "Frontend Development",
+      desc: "I build fast, responsive, and visually appealing interfaces using React and Next.js, ensuring smooth and engaging user interaction.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "collaborated for the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      title: "Backend Development",
+      desc: "I develop secure, scalable, and efficient backends with Node.js, Express, and MongoDB, focusing on performance and reliability.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "API Integration & Deployment",
+      desc: "I integrate RESTful APIs and deploy complete web applications on platforms like Vercel and Render, ensuring smooth functionality and scalability.",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
@@ -199,11 +199,21 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
-      link: "https://github.com/Dev-Tanu" ,
+      link: "https://github.com/Ambarubale6061" ,
+    },
+    {
+      id: 2,
+      img: "/link.svg",
+      link: "https://www.linkedin.com/in/ambar-ubale-137214230",
     },
     {
       id: 3,
-      img: "/link.svg",
-      link: "https://www.linkedin.com/in/tanaya-morgaonkar-6a2a77218",
+      img: "/insta.svg",
+      link: "https://www.instagram.com/ambar_ubale/",
+    },
+    {
+      id: 4,
+      img: "/twit.svg",
+      link: "https://x.com/UbaleAmbar?t=uCdNYaYwqr5HEIKyg9zZDw&s=09",
     },
   ];
