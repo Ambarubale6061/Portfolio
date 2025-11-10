@@ -76,7 +76,7 @@ export const navItems = [
   id: 1,
   title: "QuickCart: Modern E-Commerce Web App",
   des: "A modern e-commerce platform built with Next.js and MongoDB.",
-  img: "/quickcart.png",
+  img: "/QuickCart.png",
   iconLists: ["/next.svg", "/node.png", "/tail.svg", "/mongo.png"],
   link: "https://quickcart-ten-opal.vercel.app/"
     },
