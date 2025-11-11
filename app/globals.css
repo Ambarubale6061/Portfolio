@@ -198,4 +198,10 @@
   .contact__option {
     margin-bottom: 1rem; /* spacing between options on small screens */
   }
+  .mobile__contact_form {
+    flex-direction: column;
+  }
+  .black-gradient {
+    background: linear-gradient(180deg, #161a31 0%, #06091f 100%);
+  }
 }
