@@ -52,7 +52,7 @@ export const BentoGridItem = ({
   const handleDownload = () => {
     setDownloading(true);
     const link = document.createElement("a");
-    link.href = "/resume.pdf"; // Resume file path (keep it inside /public)
+    link.href = "/public/Resume.pdf"; // Resume file path (keep it inside /public)
     link.download = "Ambar_Ubale_Resume.pdf"; // File name
     document.body.appendChild(link);
     link.click();
