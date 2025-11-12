@@ -49,16 +49,17 @@ export const BentoGridItem = ({
 }) => {
   const [downloading, setDownloading] = useState(false);
 
-  const handleDownload = () => {
-    setDownloading(true);
-    const link = document.createElement("a");
-    link.href = "./../../public/Resume.pdf"; // Resume file path (keep it inside /public)
-    link.download = "Resume.pdf"; // File name
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    setTimeout(() => setDownloading(false), 1500);
-  };
+ const handleDownload = () => {
+  setDownloading(true);
+  const link = document.createElement("a");
+  link.href = "/Resume.pdf"; // ✅ Correct path
+  link.download = "Ambar_Ubale_Resume.pdf"; // Optional rename
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  setTimeout(() => setDownloading(false), 1500);
+};
+
 
   return (
     <div
