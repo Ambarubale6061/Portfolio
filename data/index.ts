@@ -2,6 +2,7 @@ import { link } from "fs";
 
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
   { name: "Services", link: "#services" }, // <-- He navin add kela
   { name: "Testimonials", link: "#testimonials" },
