@@ -1,6 +1,7 @@
 
 import Clients from "@/components/Clients";
-import Experince from "@/components/Experince";
+import Services from "@/components/Services";
+import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
@@ -16,10 +17,11 @@ export default function Home() {
       <div className="max-w-7xl w-full">
       <FloatingNav  navItems={navItems}/>
       <Hero />
-      <Grid/>
+        <Grid />
+      <Experience />
       <RecentProjects/>
       <Clients/>
-      <Experince/>
+      <Services/>
       <Footer/>
       </div>
     </main>

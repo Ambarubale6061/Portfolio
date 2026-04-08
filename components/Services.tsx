@@ -1,17 +1,17 @@
-import { workExperience } from '@/data'
+import { services } from '@/data' 
 import React from 'react'
 import { Button } from './ui/MovingBorders'
 import Image from 'next/image'
 
-const Experince = () => {
+const Services = () => { 
   return (
-    <div className='py-20' id='testimonials'>
+    <div className='py-20' id='services'> {/* <-- ID badalun 'services' kela */}
       <h1 className='heading'>
         My
         <span className='text-purple'> Services</span> 
       </h1>
       <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
-        {workExperience.map((card) => (
+        {services.map((card) => ( // <-- services.map vaparla
           <Button
             key={card.id}
             duration={Math.floor(Math.random() * 10000) + 10000}
@@ -21,9 +21,9 @@ const Experince = () => {
             <div className='flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2'>
               <Image
                 src={card.thumbnail}
-                alt={card.title}   // better accessibility
-                width={128}        // set appropriate width
-                height={128}       // set appropriate height
+                alt={card.title}
+                width={128}
+                height={128}
                 className='lg:w-32 md:w-20 w-16'
               />
               <div className='lg:ms-5'>
@@ -38,4 +38,4 @@ const Experince = () => {
   )
 }
 
-export default Experince
+export default Services 

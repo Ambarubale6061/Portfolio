@@ -1,11 +1,12 @@
 import { link } from "fs";
 
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
-  ];
+  { name: "About", link: "#about" },
+  { name: "Projects", link: "#projects" },
+  { name: "Services", link: "#services" }, // <-- He navin add kela
+  { name: "Testimonials", link: "#testimonials" },
+  { name: "Contact", link: "#contact" },
+];
   
   export const gridItems = [
     {
@@ -71,17 +72,33 @@ export const navItems = [
     },
   ];
   
-  export const projects = [
+export const projects = [
     {
   id: 1,
-  title: "QuickCart: Modern E-Commerce Web App",
-  des: "A modern e-commerce platform built with Next.js and MongoDB.",
-  img: "/quick.png",
-  iconLists: ["/next.svg", "/node.png", "/tail.svg", "/mongo.png"],
-  link: "https://quickcart-ten-opal.vercel.app/"
-    },
+  title: "AgenticAI Studio: Autonomous AI Coding Workspace",
+  des: "A full-stack, browser-based AI coding workspace where a coordinated pipeline of agents collaborate to build, run, and debug code automatically.",
+  img: "/IDE.png", 
+  iconLists: ["/react.svg", "/ts.svg", "/tail.svg", "/supa.svg", "/vite.svg"],
+  link: "https://agentic-ai-studio-iota.vercel.app/"
+  },
     {
   id: 2,
+  title: "Connectly: Instagram-Inspired Social Platform",
+  des: "A full-stack, production-ready social media platform featuring posts, reels, stories, real-time messaging, and WebRTC calls powered by Supabase.",
+  img: "/hom.png", 
+  iconLists: ["/react.svg", "/ts.svg", "/supa.svg", "/tail.svg"],
+  link: "https://connectly-tau.vercel.app/"
+  },  
+     {
+  id: 3,
+  title: "FutureCart: Modern eCommerce Platform",
+  des: "A full-stack, real-time eCommerce solution featuring an advanced product engine, seller/admin dashboards, and seamless Supabase integration.",
+  img: "/home.png", 
+  iconLists: ["/react.svg", "/ts.svg", "/supa.svg", "/tail.svg", "/fram.svg"],
+  link: "https://futurecart-e-commerce.vercel.app/"
+  },
+     {
+  id: 4,
   title: "Task Manager App",
   des: "An efficient task manager to organize and track daily activities with ease.",
   img: "/taskapp.png",
@@ -89,7 +106,15 @@ export const navItems = [
   link: "https://task-app-nine-lovat.vercel.app/",
     },
     {
-  id: 3,
+  id: 5,
+  title: "QuickCart: Modern E-Commerce Web App",
+  des: "A modern e-commerce platform built with Next.js and MongoDB.",
+  img: "/quick.png",
+  iconLists: ["/next.svg", "/node.png", "/tail.svg", "/mongo.png"],
+  link: "https://quickcart-ten-opal.vercel.app/"
+    },
+    {
+  id: 6,
   title: "Real-Time Chat App",
   des: "A real-time chat app built with React, Node.js, Socket.io, and MongoDB.",
   img: "/chatapp.png",
@@ -97,11 +122,11 @@ export const navItems = [
   link: "https://chat-application-q7ig.onrender.com/",
     },
      {
-    id: 4,
+    id: 7,
     title: "Weather App",
     des: "A real-time weather app showing temperature, humidity, and forecasts by city.",
     img: "/weather.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/api.png"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
     link: "https://weather-dashboard-six-steel.vercel.app/",
   },
 
@@ -164,36 +189,36 @@ export const navItems = [
     },
   ];
   
-  export const workExperience = [
-    {
-      id: 1,
-      title: "UI/UX Design",
-      desc: "I create clean, modern, and intuitive designs focused on delivering seamless user experiences across all platforms.",
-      className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
-    },
-    {
-      id: 2,
-      title: "Frontend Development",
-      desc: "I build fast, responsive, and visually appealing interfaces using React and Next.js, ensuring smooth and engaging user interaction.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
-    },
-    {
-      id: 3,
-      title: "Backend Development",
-      desc: "I develop secure, scalable, and efficient backends with Node.js, Express, and MongoDB, focusing on performance and reliability.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "API Integration & Deployment",
-      desc: "I integrate RESTful APIs and deploy complete web applications on platforms like Vercel and Render, ensuring smooth functionality and scalability.",
-      className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
-    },
-  ];
+export const services = [
+  {
+    id: 1,
+    title: "UI/UX Design",
+    desc: "I create clean, modern, and intuitive designs focused on delivering seamless user experiences across all platforms.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 2,
+    title: "Frontend Development",
+    desc: "I build fast, responsive, and visually appealing interfaces using React and Next.js, ensuring smooth and engaging user interaction.",
+    className: "md:col-span-2", 
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Backend Development",
+    desc: "I develop secure, scalable, and efficient backends with Node.js, Express, and MongoDB, focusing on performance and reliability.",
+    className: "md:col-span-2", 
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 4,
+    title: "API Integration & Deployment",
+    desc: "I integrate RESTful APIs and deploy complete web applications on platforms like Vercel and Render, ensuring smooth functionality and scalability.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+];
   
   export const socialMedia = [
     {
@@ -216,4 +241,53 @@ export const navItems = [
       img: "/twit.svg",
       link: "https://x.com/UbaleAmbar?t=uCdNYaYwqr5HEIKyg9zZDw&s=09",
     },
-  ];
+];
+  export const workExperience = [
+  {
+    id: 1,
+    title: "Full Stack Developer Intern",
+    company: "JaruratCare Foundation",
+    location: "Pune, India",
+    dates: "Dec 2024 - Feb 2025",
+    certificateUrl: "/certificates/jarurat.pdf",
+    descBullets: [
+      "Built a full-stack Nurse Management System using MERN stack (React, Node.js, Express, MongoDB) and Firebase, enabling efficient staff management, data handling, and real-time updates.",
+      "Developed and enhanced a WhatsApp bot system using Java and Spring Boot, implementing new features, optimizing workflows, and improving automated user interactions.",
+      "Designed and contributed to multiple solo and team-based projects, collaborating with developers to deliver scalable and production-ready solutions.",
+      "Developed and maintained the organization’s main website, improving UI/UX, performance, and overall user engagement.",
+      "Gained hands-on experience in full-stack development, API integration, and real-world problem solving, delivering high-quality features in a collaborative environment."
+    ],
+    thumbnail: "/exp1.svg", 
+    techStack: [
+      { id: 1, name: "React", img: "/re.svg" },
+      { id: 2, name: "Node.js", img: "/node.png" },
+      { id: 3, name: "MongoDB", img: "/mongo.png" },
+      { id: 4, name: "Tailwind", img: "/tail.svg" },
+      { id: 5, name: "Firebase", img: "/fir.svg" },  
+      { id: 6, name: "Java", img: "/java.svg" },
+      { id: 7, name: "Spring Boot", img: "/boot.png" },
+      { id: 8, name: "Express", img: "/ex.png" },
+      { id: 9, name: "JavaScript", img: "/js.svg" },
+      
+    ],
+  },
+  {
+    id: 2,
+    title: "Web Development Intern",
+    company: "Codec Technologies",
+    location: "Remote",
+    dates: "June 2024 - Aug 2024",
+    certificateUrl: "/certificates/codec.pdf",
+    descBullets: [
+      "Developed frontend components for a healthcare-focused platform.",
+      "Integrated Supabase for real-time data handling and authentication.",
+      "Focused on creating accessible and mobile-friendly user interfaces."
+    ],
+    thumbnail: "/exp4.svg",
+    techStack: [
+      { id: 1, name: "Next.js", img: "/next.svg" },
+      { id: 2, name: "Supabase", img: "/supa.svg" },
+      { id: 3, name: "TypeScript", img: "/ts.svg" },
+    ],
+  },
+];

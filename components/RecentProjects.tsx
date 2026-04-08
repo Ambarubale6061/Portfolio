@@ -29,13 +29,18 @@ const RecentProjects = () => {
                   />
                 </div>
 
+                {/* ✅ Updated Image Positioning */}
                 <Image
                   src={img}
                   alt={title}
-                  className="z-10 absolute bottom-0"
-                  width={500}
+                  className="z-10 absolute top-12 translate-y-2 rounded-t-lg shadow-2xl"
+                  width={460}
                   height={300}
-                  objectFit="contain"
+                  style={{ 
+                    objectFit: 'contain',
+                    width: '92%',
+                    height: 'auto'
+                  }}
                 />
               </div>
 
@@ -65,7 +70,6 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                {/* ✅ Clickable Link for Live Site */}
                 <a
                   href={link}
                   target="_blank"
