@@ -38,15 +38,15 @@ const Experience = () => {
                     <h1 className='text-start text-2xl md:text-3xl font-bold tracking-tight'>
                       {card.title}
                     </h1>
-                    <div className="p-2 bg-white/5 rounded-full border border-white/10">
-                        <Image 
-                          src={card.thumbnail} 
-                          alt="icon" 
-                          width={28} 
-                          height={28} 
-                          className="w-7 h-7 object-contain"
-                        />
-                    </div>
+                    <div className="w-10 h-10 bg-white rounded-full border border-white/10 overflow-hidden flex items-center justify-center">
+    <Image 
+      src={card.thumbnail} 
+      alt="icon" 
+      width={40} 
+      height={40} 
+      className="w-full h-full object-cover"
+    />
+</div>
                   </div>
                   
                   <div className='flex flex-wrap items-center gap-2 mt-3 text-sm md:text-md'>

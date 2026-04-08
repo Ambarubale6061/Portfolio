@@ -247,9 +247,9 @@ export const services = [
     id: 1,
     title: "Full Stack Developer Intern",
     company: "JaruratCare Foundation",
-    location: "Pune, India",
-    dates: "Dec 2024 - Feb 2025",
-    certificateUrl: "/certificates/jarurat.pdf",
+    location: "Remote",
+    dates: "Nov 2025 - Mar 2026",
+    certificateUrl: "/Certi.pdf",
     descBullets: [
       "Built a full-stack Nurse Management System using MERN stack (React, Node.js, Express, MongoDB) and Firebase, enabling efficient staff management, data handling, and real-time updates.",
       "Developed and enhanced a WhatsApp bot system using Java and Spring Boot, implementing new features, optimizing workflows, and improving automated user interactions.",
@@ -257,7 +257,7 @@ export const services = [
       "Developed and maintained the organization’s main website, improving UI/UX, performance, and overall user engagement.",
       "Gained hands-on experience in full-stack development, API integration, and real-world problem solving, delivering high-quality features in a collaborative environment."
     ],
-    thumbnail: "/exp1.svg", 
+    thumbnail: "/jaru.png", 
     techStack: [
       { id: 1, name: "React", img: "/re.svg" },
       { id: 2, name: "Node.js", img: "/node.png" },
@@ -268,26 +268,12 @@ export const services = [
       { id: 7, name: "Spring Boot", img: "/boot.png" },
       { id: 8, name: "Express", img: "/ex.png" },
       { id: 9, name: "JavaScript", img: "/js.svg" },
+      { id: 10, name: "TypeScript", img: "/ts.svg" },
+      { id: 11, name: "Git", img: "/git.svg" },
+      { id: 14, name: "Supabase", img: "/supa.svg" },
+      { id: 15, name: "Docker", img: "/dock.svg" },
+      { id: 16, name: "Next.js", img: "/next.svg" },
       
-    ],
-  },
-  {
-    id: 2,
-    title: "Web Development Intern",
-    company: "Codec Technologies",
-    location: "Remote",
-    dates: "June 2024 - Aug 2024",
-    certificateUrl: "/certificates/codec.pdf",
-    descBullets: [
-      "Developed frontend components for a healthcare-focused platform.",
-      "Integrated Supabase for real-time data handling and authentication.",
-      "Focused on creating accessible and mobile-friendly user interfaces."
-    ],
-    thumbnail: "/exp4.svg",
-    techStack: [
-      { id: 1, name: "Next.js", img: "/next.svg" },
-      { id: 2, name: "Supabase", img: "/supa.svg" },
-      { id: 3, name: "TypeScript", img: "/ts.svg" },
     ],
   },
 ];
