@@ -161,7 +161,7 @@ export const BentoGridItem = ({
                 />
               </div>
               <MagicButton
-                title={downloading ? "Downloading..." : "Download Resume"}
+                title={downloading ? "Downloading..." : "Get My Resume"}
                 icon={<FaLocationArrow />}
                 position="left"
                 otherClasses="!bg-[#161a31] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(168,85,247,0.6)]"

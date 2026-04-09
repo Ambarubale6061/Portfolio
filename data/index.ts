@@ -1,13 +1,14 @@
-import { link } from "fs";
-
+// data/index.ts
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
-  { name: "Services", link: "#services" }, // <-- He navin add kela
+  { name: "Services", link: "#services" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
+
+// ... baki sagle gridItems, projects tashech rahu de
   
   export const gridItems = [
     {
