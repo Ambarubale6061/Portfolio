@@ -52,16 +52,16 @@ export const navItems = [
       spareImg: "/b4.svg",
     },
   
-    {
-      id: 5,
-      title: "Currently Building a next-gen E-commerce platform redefining online shopping.",
-      description: "The Inside Scoop",
-      className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-      titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
-    },
+   {
+  id: 5,
+  title: "Building AgenticAI Studio — a multi-agent AI development environment that can plan, generate, debug, and execute code directly in the browser.",
+  description: "Currently Building",
+  className: "md:col-span-3 md:row-span-2",
+  imgClassName: "absolute right-0 bottom-0 md:w-96 w-60 opacity-90",
+  titleClassName: "justify-center md:justify-start lg:justify-center",
+  img: "/b5.svg",
+  spareImg: "/grid.svg",
+},
     {
       id: 6,
       title: "Let’s build the next big thing together.",
@@ -80,7 +80,7 @@ export const projects = [
   title: "AgenticAI Studio: Autonomous AI Coding Workspace",
   des: "A full-stack, browser-based AI coding workspace where a coordinated pipeline of agents collaborate to build, run, and debug code automatically.",
   img: "/IDE.png", 
-  iconLists: ["/react.svg", "/ts.svg", "/tail.svg", "/supa.svg", "/vite.svg"],
+  iconLists: ["/react.svg","/node.png","/ex.png","/mongo.png", "/ts.svg", "/tail.svg", "/supa.svg", "/vite.svg"],
   link: "https://agentic-ai-studio-chi.vercel.app/"
   },
     {

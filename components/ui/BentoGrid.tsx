@@ -8,6 +8,7 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import Image from "next/image";
+import { MdOutlinePsychology } from "react-icons/md";
 
 export const BentoGrid = ({
   className,
@@ -49,17 +50,16 @@ export const BentoGridItem = ({
 }) => {
   const [downloading, setDownloading] = useState(false);
 
- const handleDownload = () => {
-  setDownloading(true);
-  const link = document.createElement("a");
-  link.href = "/Resume.pdf"; // ✅ Correct path
-  link.download = "Ambar_Ubale_Resume.pdf"; // Optional rename
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  setTimeout(() => setDownloading(false), 1500);
-};
-
+  const handleDownload = () => {
+    setDownloading(true);
+    const link = document.createElement("a");
+    link.href = "/Resume.pdf";
+    link.download = "Ambar_Ubale_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setTimeout(() => setDownloading(false), 1500);
+  };
 
   return (
     <div
@@ -74,11 +74,12 @@ export const BentoGridItem = ({
       }}
     >
       <div className={`${id === 6 ? "flex justify-center" : ""} h-full`}>
+        {/* Background Image */}
         <div className="w-full h-full absolute">
           {img && (
             <Image
               src={img}
-              alt={img}
+              alt=""
               className={cn(imgClassName, "object-cover object-center")}
               width={500}
               height={500}
@@ -87,6 +88,7 @@ export const BentoGridItem = ({
           )}
         </div>
 
+        {/* Spare Image */}
         <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 ? "w-full opacity-80" : ""
@@ -95,7 +97,7 @@ export const BentoGridItem = ({
           {spareImg && (
             <Image
               src={spareImg}
-              alt={spareImg}
+              alt=""
               className="object-cover object-center w-full h-full"
               width={500}
               height={500}
@@ -105,21 +107,33 @@ export const BentoGridItem = ({
 
         {id === 6 && <BackgroundGradientAnimation />}
 
+        {/* Content */}
         <div
           className={cn(
             titleClassName,
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
-            {description}
-          </div>
+          {/* ✅ FIXED PART (AI ICON ADDED HERE) */}
+          {id === 5 ? (
+            <div className="flex items-center gap-2 text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+              <MdOutlinePsychology className="text-purple-400 animate-pulse drop-shadow-[0_0_10px_rgba(168,85,247,0.8)] group-hover/bento:rotate-12 transition duration-300" />
+              <span>{description}</span>
+            </div>
+          ) : (
+            <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+              {description}
+            </div>
+          )}
+
+          {/* Title */}
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
             {title}
           </div>
 
           {id === 2 && <GlobeDemo />}
 
+          {/* Tech Stack */}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-1 lg:-right-1">
               <div className="flex flex-col gap-3 lg:gap-6">
@@ -147,7 +161,7 @@ export const BentoGridItem = ({
             </div>
           )}
 
-          {/* ✅ Replaced Copy Email button with Download Resume */}
+          {/* Resume Button */}
           {id === 6 && (
             <div className="mt-5 relative">
               <div className="absolute -bottom-5 right-0">
@@ -156,12 +170,14 @@ export const BentoGridItem = ({
                     loop: downloading,
                     autoplay: downloading,
                     animationData,
-                    rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
+                    rendererSettings: {
+                      preserveAspectRatio: "xMidYMid slice",
+                    },
                   }}
                 />
               </div>
               <MagicButton
-                title={downloading ? "Downloading..." : "Get My Resume"}
+                title={downloading ? "Downloading..." : "Download Resume"}
                 icon={<FaLocationArrow />}
                 position="left"
                 otherClasses="!bg-[#161a31] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(168,85,247,0.6)]"
