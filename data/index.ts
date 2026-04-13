@@ -81,7 +81,7 @@ export const projects = [
   des: "A full-stack, browser-based AI coding workspace where a coordinated pipeline of agents collaborate to build, run, and debug code automatically.",
   img: "/IDE.png", 
   iconLists: ["/react.svg", "/ts.svg", "/tail.svg", "/supa.svg", "/vite.svg"],
-  link: "https://agentic-ai-studio-iota.vercel.app/"
+  link: "https://agentic-ai-studio-chi.vercel.app/"
   },
     {
   id: 2,
