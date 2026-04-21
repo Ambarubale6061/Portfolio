@@ -128,7 +128,7 @@ export const projects = [
     title: "Weather App",
     des: "A real-time weather app showing temperature, humidity, and forecasts by city.",
     img: "/weather.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/vite.svg"],
     link: "https://weather-dashboard-six-steel.vercel.app/",
   },
 
